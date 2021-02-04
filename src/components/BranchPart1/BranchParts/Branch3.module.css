@@ -1,0 +1,147 @@
+.main{
+    display: flex;
+    background-color: #EDEFF4;
+    width: 100%;
+    margin: 0px;
+    height: 100vh;
+    
+    
+}
+
+.height{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    margin: auto;
+    height: 60vh;
+}
+
+.inMain{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.inFlex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.inFlex h3{
+    color: #009A44;
+    font-size: 18px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.imgCard{
+    width: 90%;
+    height: 80%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.bg{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   text-align: center;
+    
+}
+
+.bg{
+    width: 100%;
+    height: 0px;
+    background-color: #273656 ;
+    transition: all 1s ease;
+    color: #fff;
+}
+
+
+.imgCard:hover .bg{
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.textCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textCard h3{
+    color: #273656;
+    font-size: 27px;
+    padding-bottom: 22px;
+    margin-bottom: 0px;
+}
+
+.elem{
+    background-color: #F6EB61;
+    width: 100%;
+    height: 5px;
+}
+
+.textCard p{
+    color: #001E60;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+
+@media  screen and (max-width:900px){
+    .flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    .imgCard{
+        height: 60vh;
+    }
+    .main{
+        height: 120vh;
+    }
+    .height{
+        margin:20px auto;
+    }
+}
+@media  screen and (max-width:700px){
+    .main{
+        height: 140vh;
+    }
+}
+@media  screen and (max-width:500px){
+    .main{
+        height: 160vh;
+    }
+}
+@media  screen and (max-width:400px){
+    .main{
+        height: 180vh;
+    }
+    .textCard p{
+        font-size: 16px;
+    }
+}
+@media  screen and (max-width:330px){
+    .main{
+        height: 200vh;
+    }
+}

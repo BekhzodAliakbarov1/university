@@ -1,0 +1,8 @@
+.images{
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}

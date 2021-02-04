@@ -1,0 +1,43 @@
+.title {
+    margin: 2rem 0;
+    width: 70%;
+    font-weight: 500;
+}
+
+.h3 {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid blue;
+}
+
+.h3one {
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid blue;
+}
+.main{
+    width: 100%;
+    background-position: right top;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.container{
+    margin: 50px auto;
+}
+.h3danger {
+    font-weight: 500;
+    border: 2px solid red;
+    color: red;
+}
+
+@media screen and (max-width: 750px) {
+    .title {
+        text-align: center;
+        width: 100%;
+    }
+    .h3danger, .h3one, .h3{
+        font-size: 20px;
+        text-align: center;
+    }
+}

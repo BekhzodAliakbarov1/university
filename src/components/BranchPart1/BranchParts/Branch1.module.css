@@ -1,0 +1,102 @@
+.main{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.inMain{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.textHead{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.textHead h1{
+    margin-right: auto;
+    color: #273656;
+    font-weight: 300;
+    font-size: 28px;
+    width: 65%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+    
+}
+
+.text h2{
+    margin: 0px;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.text p{
+    margin: 0px;
+    font-size: 16px;
+}
+@media screen and (max-width:1000px){
+    .textHead h1{
+        font-size: 22px;
+        width: 90%;
+        margin: auto;
+    }
+    .text{
+        margin: auto;
+        width: 90%;
+    }
+
+
+}
+
+@media  screen and(max-width:800px){
+    .text{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 80%;
+        
+    }
+    .textHead{
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+        width: 80%;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and(max-width:400px){
+    .text{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        
+    }
+    .textHead{
+        display: flex;
+        flex-direction: column;
+        font-size: 28px;
+        width: 100%;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar h1, h2, h3, h4{
+    font-size: 1rem  !important;
+}
+.navbar{
+    z-index: 100;
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    text-transform: uppercase;
+    color: #273656;
+    top: 0;
+}
+.navbar1{
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    text-transform: uppercase;
+    color: #273656;
+    top: 0;
+}
+.clickedNavbar>h1, .clickedNavbar span{
+    color: #273656;
+    margin: 2px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.clickedNavbar span svg{
+    margin: -2px;
+}
+.clickedNavbar{
+    width: 100%;
+    padding: 25px 0px 12px 0px;
+    background-color: rgba(226, 225, 225, 0.7);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #273656;
+    transition: all 1s ease;
+}
+.clickedNavbar.NS{
+    background-color: #fff;
+    transition: all 1s ease;
+}
+.clickedNavbar>h1{
+    font-size: 20px;
+    width: 35%;
+    margin: auto;
+}
+.clickedNavbar div{
+    width: 20%;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px;
+    margin-left: 20%;
+}
+.clickedNavbar div::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(20, 149, 20);
+    margin-top: 5px;
+    bottom: 0;
+    left: 0;
+    transition: all 1s ease;
+}
+.clickedNavbar div:hover::after{
+    width: 25%;
+    transition: all 1s ease;
+
+}
+.clickedNavbar.NC{
+    background-color: #273656;
+    border-bottom: 1px solid #3b4966;
+    color: #fff;
+    transition: all 1s ease;
+}
+.clickedNavbar.NC>h1, .clickedNavbar.NC span{
+    color: #fff;
+    transition: all 1s ease;
+}
+.activeNav{
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+.activeNav>div{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.activeNav>div div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #273656;
+    color: #fff;
+    /* transition: all 1s ease; */
+}
+.activeNav>div:hover div{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+.activeNav>div:hover h1{
+    position: absolute;
+    top: 10%;
+    transition: all 1s ease;
+    text-align: center;
+    color: #fff !important;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: .01em;
+}
+.activeNav>div h1{
+    transition: all 1s ease;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: .4rem;
+    font-weight: 300;
+}
+.activeNav div h2{
+    width: 80%;
+    padding: 5%;
+    margin: 2% auto; 
+    text-align: center;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: relative;
+}
+.activeNav div h2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.activeNav div h2::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(20, 149, 20);
+    margin-top: 2px;
+    bottom: 0;
+    left: 0;
+    transition: all 1s ease;
+}
+.activeNav div h2:hover::after{
+    transition: all 1s ease;
+    width: 80%;
+    margin: auto;
+}
+@media screen and (max-width: 1000px){
+    div.activeNav{
+        display: flex;
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        height: 90vh;
+    }
+    .activeNav>div{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+    .activeNav>div div{
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .activeNav>div h2{
+        margin: 0px;
+        padding: 0px;
+    }
+    .activeNav div>div h2{
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: .01em;
+        height: 20%;
+        width: 20%;
+        margin: auto;
+    }
+    .activeNav>div:hover h1{
+        display: none;
+    }
+}
+@media screen and (max-width: 620px){
+   .clickedNavbar>h1{
+        font-size: 18px;
+        width: 55%;
+    } 
+    .clickedNavbar div{
+        width: 30%;
+        margin: auto;
+        position: relative;
+        cursor: pointer;
+        padding-bottom: 5px;
+        margin-left: 0%;
+    }
+}
+@media screen and (max-width: 500px){
+    .activeNav>div h1{
+        font-size: 20px;
+        letter-spacing: .6rem;
+        font-weight: 300;
+    }
+    .activeNav div>div h2{
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0;
+        
+    }
+}

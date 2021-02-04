@@ -1,0 +1,147 @@
+.main{
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: #454444;
+    padding-bottom: 24px;
+    margin-top: 82px;
+    background-color: #001E600D;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+
+
+
+.parent{
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    justify-content: space-around;
+    padding-left: 60px;
+
+
+}
+
+.divImg{
+    width: 60%;
+    margin: auto;
+    height: 70vh;
+    background-size:cover;
+    position: relative;
+    top: -80px;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+
+.divText{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 82px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 50px;
+    color: #273656;
+    width: 30vw;
+
+}
+.learn {
+    font-size: 28px;
+}
+
+.text{
+    color: #454444;
+    padding-top: 27px;
+    padding-bottom: 15px;
+    font-size: 16px;
+
+}
+
+.linkDiv{
+    padding-top: 35px;
+    width: 80%;
+}
+
+.linkDiv div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    
+}
+
+.linkDiv div div {
+    padding-bottom: 5px;
+    border-bottom: 1px #0f5705 solid ;
+}
+
+.linkDiv div div a{
+    text-decoration: none;
+    color: #273656;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+
+.linkDiv div div a:hover{
+    color: #0f5705;
+}
+
+.linkdiv1 div  {
+    border-bottom: 5px #0f5705 solid ;
+
+}
+
+.linkDiv div div:hover{
+    transition: all  1s ease;
+}
+
+.linkDiv div div a::after{
+    content: '';
+    transform: rotateZ(27deg);
+    position: absolute;
+    right: -2px;
+    bottom: -6px;
+    width: 0%;
+    height: 1px;
+    background-color: #0f5705;
+    transform-origin: right;
+    transition: all 0.5s ease;
+
+}
+
+.linkDiv div div a::before{
+    content: '';
+    transform: rotateZ(-27deg);
+    position: absolute;
+    right: -2px;
+    bottom: -6px;
+    width: 0%;
+    height: 1px;
+    background-color: #0f5705;
+    transform-origin: right;
+    transition: all 0.5s ease;
+}
+.linkDiv div div a:hover::after{
+    width: 28%;
+}
+.linkDiv div div a:hover::before{
+    width: 28%;
+}
+
+@media screen and (max-width: 1000px){
+    .parent {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divText{
+        width: 70%;
+        margin: auto;
+    }
+    .divImg{
+        width: 100%;
+    }
+}

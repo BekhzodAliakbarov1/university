@@ -1,0 +1,291 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 109px;
+    background-color: #1F2C48;
+    color: #808A9F;
+}
+
+.downText{
+    display: flex;
+    /* justify-content: left; */
+    width: 50%;
+    margin-left: 0px;
+    height: auto;
+    color: #808A9F;
+    font-size: 10px;
+    padding-bottom: 36px;
+    padding-top: 36px;
+}
+
+.inMain{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    height: auto;
+    padding-top: 112px;
+}
+
+
+.leftDiv{
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+    
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    height: auto;
+
+}
+
+.imgLogo a  img {
+    width: 55px;
+    height: auto;
+    margin-right:auto;
+    color: #fff;
+}
+
+
+.nameLogo{
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    color: #fff;
+    font-size: 16px ;
+    padding-left: 10px;
+    padding-top: 8px;
+
+}
+
+.socialIcons{
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+.socialIcons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    border: 1px #808A9F solid;
+    border-radius: 50%;
+    margin-right: 8px;
+
+
+}
+
+.socialIcons div:hover{
+    border-color: #fff;
+    transition: all 0.5s ease;
+
+}
+
+.socialIcons div svg{
+    width: 13px;
+    height: auto;
+}
+
+.socialIcons div svg:hover{
+    color: #fff;
+    width: 15px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* width: 40vw;
+    margin: auto; */
+}
+
+.title{
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 46px;
+}
+
+.address{
+    color: #fff;
+    font-size : 12px;
+    padding-bottom: 18px;
+}
+
+.address span{
+    color:#808A9F;
+    padding-left: 6px;
+}
+
+
+.icon{
+    color: #808A9F;
+    font-size: 12px;
+    padding-bottom: 16px;
+}
+
+.icon svg{
+    color: #fff;
+    margin-right: 10px;
+    
+}
+
+.icon a{
+    color: #808A9F;
+    text-decoration: none;
+}
+
+.inTitle{
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 34pxpx;
+}
+
+
+.times{
+    display: flex;
+    justify-content: space-between ;
+    font-size: 10px;
+    padding-right: 30px;
+}
+
+.times h6{
+    font-size: 10px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+
+}
+
+
+.quickInfo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.quickInfo .title{
+    
+    padding-left: 60px;
+
+    
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.list div{
+    
+    padding-bottom: 17px;
+}
+
+.list div a{
+    color: #808A9F;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.icon a:hover{
+    color: #fff;
+    transition: all 0.4s ease;
+
+}
+
+.list div a:hover{
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+@media only screen and (max-width:900px){
+    .inMain{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+        justify-items: center;
+    }
+    .inMain > div:nth-child(1){
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .inMain > div:nth-child(1) .logo{
+        width: 60%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+    .inMain > div:nth-child(2){
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .inMain .list{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .inMain > div:nth-child(3){
+        grid-column: 1/3;
+        width: 100%;
+    }
+    .title{
+        margin-top: 30px;
+    }
+    .times{
+        justify-content: left;
+    }
+    .contact{
+        padding-left: 0px;
+    }
+    .quickInfo .title{
+        padding-left: 0px;
+    }
+    .list{
+        padding-left: 0px;
+    }
+    .leftDiv{
+        margin-right: 0px;
+    }
+
+    
+}
+
+@media  screen and (max-width: 600px){
+    .logo{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 450px){
+    .inMain{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 400px){
+    .list{
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+}
