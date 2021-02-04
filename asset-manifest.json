@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/university/static/css/main.9b340b47.chunk.css",
+    "main.js": "/university/static/js/main.52322beb.chunk.js",
+    "main.js.map": "/university/static/js/main.52322beb.chunk.js.map",
+    "runtime-main.js": "/university/static/js/runtime-main.d6575670.js",
+    "runtime-main.js.map": "/university/static/js/runtime-main.d6575670.js.map",
+    "static/js/2.447455b8.chunk.js": "/university/static/js/2.447455b8.chunk.js",
+    "static/js/2.447455b8.chunk.js.map": "/university/static/js/2.447455b8.chunk.js.map",
+    "index.html": "/university/index.html",
+    "static/css/main.9b340b47.chunk.css.map": "/university/static/css/main.9b340b47.chunk.css.map",
+    "static/js/2.447455b8.chunk.js.LICENSE.txt": "/university/static/js/2.447455b8.chunk.js.LICENSE.txt",
+    "static/media/Slider-1.1bf2ff70.jpg": "/university/static/media/Slider-1.1bf2ff70.jpg",
+    "static/media/Slider-2.0f02ac9a.jpg": "/university/static/media/Slider-2.0f02ac9a.jpg",
+    "static/media/Slider-3.66ebff7b.jpg": "/university/static/media/Slider-3.66ebff7b.jpg",
+    "static/media/back.dd8a774f.jpg": "/university/static/media/back.dd8a774f.jpg",
+    "static/media/navbar1.fbb219da.jpg": "/university/static/media/navbar1.fbb219da.jpg",
+    "static/media/navbar2.d18dadd9.jpg": "/university/static/media/navbar2.d18dadd9.jpg",
+    "static/media/navbar3.cf40c571.jpg": "/university/static/media/navbar3.cf40c571.jpg",
+    "static/media/navbar4.c7abf8b2.jpg": "/university/static/media/navbar4.c7abf8b2.jpg",
+    "static/media/navbar5.08ab6866.jpg": "/university/static/media/navbar5.08ab6866.jpg",
+    "static/media/pr.3858af75.jpg": "/university/static/media/pr.3858af75.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d6575670.js",
+    "static/js/2.447455b8.chunk.js",
+    "static/css/main.9b340b47.chunk.css",
+    "static/js/main.52322beb.chunk.js"
+  ]
+}
